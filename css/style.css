@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+}
+
+:root{
+    --orange: rgb(219,137,102);
+    --black: rgb(40,38,37);
+    --lightgray: rgb(174,174,189);
+    --cream: rgb(244,242,227);
+    --border: 2px solid rgba(0,0,0,.2);
+    --box-shadow:rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+html{
+    font-size: 40px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding: 0;
+}
+
+.header{
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    z-index: 1000;
+    background-color: var(--cream);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    padding: 40px 5%;
+}
+
+.header .logo{
+    color: var(--black);
+    font-size: 60px;
+    margin-right: auto;
+}
+
+.header .logo span{
+    color: var(--orange)
+}
+
+.header .navbar a{
+    color: var(--black);
+    margin-right: 30px;
+    margin-left: 20px;
+}
+.header .navbar a:hover{
+    color: var(--orange);
+}
+
+.header .icons i{
+    text-align: center;
+    color: var(--black);
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header .icons i:hover{
+    color: var(--orange);
+}
+
+.header .search-form{
+    position: absolute;
+    background: var(--cream);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    top: 110%;
+    right: 1%;
+    height: 50px;
+    width: 300px;
+    padding: px;
+    box-shadow: var(--box-shadow);
+}
+.header .search-form #search-box{
+    width: 100%;
+    background-color: var(--cream);
+    font-size: 20px;
+}
+.header .search-form #search-box:hover{
+    border: var(--border);
+}
